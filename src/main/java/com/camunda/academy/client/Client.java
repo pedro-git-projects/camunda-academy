@@ -11,7 +11,6 @@ public class Client {
     private final ZeebeClient zeebeClient;
 
     public Client() {
-        // Load environment variables
         Dotenv dotenv = Dotenv.load();
         String zeebeAddress = dotenv.get("ZEEBE_ADDRESS");
         String zeebeClientID = dotenv.get("ZEEBE_CLIENT_ID");
